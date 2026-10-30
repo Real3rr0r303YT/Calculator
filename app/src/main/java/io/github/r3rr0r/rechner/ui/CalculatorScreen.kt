@@ -60,7 +60,7 @@ import io.github.r3rr0r.rechner.CalculatorViewModel
 import io.github.r3rr0r.rechner.calc.CalcState
 import io.github.r3rr0r.rechner.calc.Key
 
-const val SUPPORT_URL = "https://www.buymeacoffee.com/3rr0r303yt"
+const val SUPPORT_URL = "https://buymeacoffee.com/3rr0r303YT"
 
 private val Mono = FontFamily.Monospace
 
