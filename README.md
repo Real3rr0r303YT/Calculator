@@ -41,8 +41,12 @@ keytool -genkeypair -v -keystore release.jks -alias rechner -keyalg RSA -keysize
 
 ## Support
 
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-3rr0r303yt-D71921?logo=buymeacoffee&logoColor=white)](https://www.buymeacoffee.com/3rr0r303yt)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-3rr0r303YT-D71921?logo=buymeacoffee&logoColor=white)](https://buymeacoffee.com/3rr0r303YT)
 
 ## Lizenz
 
-MIT © 3rr0r
+[GNU General Public License v3.0](LICENSE) (GPL-3.0-or-later) © 2026 3rr0r
+
+---
+
+<p align="center"><b>Made by <a href="https://github.com/Real3rr0r303YT">Real3rr0r303YT</a></b> · GPL-3.0</p>
