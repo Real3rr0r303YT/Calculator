@@ -45,7 +45,7 @@ keytool -genkeypair -v -keystore release.jks -alias rechner -keyalg RSA -keysize
 
 ## Lizenz
 
-MIT © 3rr0r
+GNU GPL v3.0 © 2026 Real3rr0r303YT. Siehe [LICENSE](LICENSE).
 
 ---
 
