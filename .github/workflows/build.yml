@@ -51,15 +51,22 @@ jobs:
           cp app/build/outputs/apk/release/app-release.apk "dist/Rechner-Nothing-$VERSION.apk"
           cp app/build/outputs/apk/debug/app-debug.apk "dist/Rechner-Nothing-$VERSION-debug.apk"
 
+      - name: Build root module (Magisk / KernelSU / APatch)
+        run: bash module/build.sh app/build/outputs/apk/release/app-release.apk app dist
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: Rechner-Nothing-APK
-          path: dist/*.apk
+          path: |
+            dist/*.apk
+            dist/*-module.zip
 
       - name: GitHub Release (on tag)
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
-          files: dist/Rechner-Nothing-*.apk
+          files: |
+            dist/Rechner-Nothing-*.apk
+            dist/*-module.zip
           generate_release_notes: true
