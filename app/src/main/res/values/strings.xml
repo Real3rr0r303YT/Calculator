@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Rechner</string>
+    <string name="widget_calc_name">Rechner</string>
+    <string name="widget_calc_desc">Rechnen direkt auf dem Startbildschirm – Punktmatrix-Anzeige und Tastatur</string>
 </resources>

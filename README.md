@@ -6,6 +6,7 @@ Minimalistischer Android-Taschenrechner im Nothing-OS-Look — Jetpack Compose &
 - Mattschwarz, Clean White, Nothing-Rot `#D71921`
 - Runde Glas-Tasten, Dot-Grid-Hintergrund, Haptik
 - `+ − × ÷`, `%`, `( )`, `±`, Live-Zwischenergebnis, BigDecimal-Genauigkeit
+- Startbildschirm-Widget: kompletter Rechner mit Punktmatrix-Anzeige und Tastatur
 - Keine Berechtigungen, kein Internet, kein Tracking
 
 ## Build

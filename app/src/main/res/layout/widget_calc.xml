@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Rechner widget – GPL-3.0 – Made by 3rr0r303YT on TikTok -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_bg"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/widget_display"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/widget_calc_name"
+        android:scaleType="fitEnd" />
+
+    <TextView
+        android:id="@+id/widget_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="monospace"
+        android:gravity="end"
+        android:maxLines="1"
+        android:textColor="#FF8C8C8C"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/k_clear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/widget_button_bg"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="C"
+                android:textColor="#FFDA291C"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/k_paren"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/widget_button_bg"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="()"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/k_percent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/widget_button_bg"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="%"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/k_div"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/widget_button_bg"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="÷"
+                android:textColor="#FFDA291C"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/k7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/widget_button_bg"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/k8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/widget_button_bg"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/k9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/widget_button_bg"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/k_mul"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/widget_button_bg"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="×"
+                android:textColor="#FFDA291C"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/k4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/widget_button_bg"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/k5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/widget_button_bg"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/k6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/widget_button_bg"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/k_sub"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/widget_button_bg"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="−"
+                android:textColor="#FFDA291C"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/k1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/widget_button_bg"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/k2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/widget_button_bg"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/k3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/widget_button_bg"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/k_add"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/widget_button_bg"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="#FFDA291C"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/k0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/widget_button_bg"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/k_dot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/widget_button_bg"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="."
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/k_back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/widget_button_bg"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="⌫"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/k_eq"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/widget_button_red"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="="
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
